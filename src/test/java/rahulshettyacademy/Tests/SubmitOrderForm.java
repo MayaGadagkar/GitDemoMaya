@@ -32,7 +32,7 @@ public class SubmitOrderForm extends BaseTest {
 		ConfirmationPage confirmationPage = paymentPage.AddDetailsAndPlaceOrder("India");
 		String msgConfirmation = confirmationPage.getConfirmation();
 		Assert.assertTrue(msgConfirmation.equalsIgnoreCase(expectedMsg));
-		System.out.println("Your order is placed successfully !!!");
+		System.out.println("Your order is placed successfully!!!");
 		
 
 	}
