@@ -33,6 +33,9 @@ public class SubmitOrderForm extends BaseTest {
 		String msgConfirmation = confirmationPage.getConfirmation();
 		Assert.assertTrue(msgConfirmation.equalsIgnoreCase(expectedMsg));
 		System.out.println("Your order is placed successfully !!!");
+		System.out.println("Your order is placed successfully !!!");
+		System.out.println("Your order is placed successfully !!!");
+
 	}
 
 	@Test(dependsOnMethods = { "submitOrder" })
