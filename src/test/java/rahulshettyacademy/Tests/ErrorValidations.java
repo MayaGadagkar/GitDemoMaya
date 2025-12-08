@@ -15,7 +15,7 @@ public class ErrorValidations extends BaseTest {
 	public void NegativeTest() {
 
 		ProductCatalogue prodCat = landingPage.LoginApplication("Gadagkar@gmail.com", "Automation@01");
-		Assert.assertEquals("Incorrect email password.", landingPage.getErrorMsg());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMsg());
 
 	}
 
