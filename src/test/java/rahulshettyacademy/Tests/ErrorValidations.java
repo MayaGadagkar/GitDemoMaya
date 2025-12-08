@@ -10,6 +10,7 @@ import rahulshettyacademy.PO.CartPO;
 import rahulshettyacademy.PO.ProductCatalogue;
 import rahulshettyacademy.TestComponents.BaseTest;
 
+// @author Maya Gadagkar
 public class ErrorValidations extends BaseTest {
 	@Test(groups = { "ErrorValidations" },retryAnalyzer =Retry.class)
 	public void NegativeTest() {
