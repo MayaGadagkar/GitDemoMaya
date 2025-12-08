@@ -29,7 +29,8 @@ public class ErrorValidations extends BaseTest {
 		prodCat.addProdToCart(productName);
 		CartPO cart = prodCat.goToCartPage();
 		Boolean match = cart.ValidateCartIftheProductexists(productName);
-		Assert.assertTrue(match);
-	}
+		//Assert.assertTrue(match);
+		Assert.assertFalse(match,"Product is not found in the cart, test failed");
+		}
 
 }
